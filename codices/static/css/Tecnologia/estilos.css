@@ -1,0 +1,193 @@
+/*Estilos generales*/
+*{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -mox-box-sizing: border-box;
+  box-sizing: border-box; /*logra que el padding funcione bien*/
+  background-color: #000000
+}
+
+body{
+  font-family: serif;
+}
+
+.contenedor{
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/*Header*/
+.header .topHeader{
+  padding: 6px 0;
+  font-size: 12px;
+  border-bottom: 1px solid #000000;
+  background: #000000;
+  overflow:hidden;
+
+}
+
+.header .topHeader .contenedor .topMenu{
+  float: left;
+}
+
+.header .topHeader .contenedor .topMenu ul{
+  list-style: none;
+}
+
+.header .topHeader .contenedor .topMenu ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px 15px;
+  display: inline-block;
+}
+
+.header .titulo{
+  margin: 35px 0;
+  text-align: center;
+
+}
+
+.header .titulo .contenedor h1 a{
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 60px;
+  display: inline-block;
+  padding: 30px 0;
+  font-weight: 300;
+
+}
+/*
+.header .titulo .contenedor h1 a{
+  color: #8b919c
+}
+*/
+
+/*main*/
+/*portada*/
+.main .portada{
+  padding-bottom: 20px;
+  border-bottom: 1px solid #000000;
+}
+
+.main .portada .contenedor .portadaPrincipal{
+  width: 100%;
+}
+
+.main .portada .contenedor .portadaPrincipal img{
+  width: 100%;
+}
+/*Cursos*/
+/*---imagen redonda*/
+.imgRedonda {
+    width:300px;
+    height:300px;
+    border-radius:150px;
+}
+/*---imagen redonda*/
+.main .cursos{
+  background: #000000;
+  padding: 40px 0;
+}
+.main .cursos .contenedor{
+  overflow: hidden;
+  width: 80%;
+}
+
+.main .cursos .contenedor .articulos{
+  background: #000000;
+  padding: 60px 10px;
+  border: 1px solid #000000;
+  margin-bottom: 30px;
+}
+.main .cursos .contenedor .articulos{
+  float: left;
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+.main .cursos .contenedor .articulos .articulo {
+  margin: auto;
+  margin-top: 60px;
+  width: 900px;
+  height: 300px;
+
+}
+
+.main .cursos .contenedor .articulos .articulo .izquierda{
+  width: 300px;
+  float: left;
+}
+.main .cursos .contenedor .articulos .articulo .derecha{
+  width: 600px;
+  float: left;
+}
+
+.main .cursos .contenedor .articulos .articulo .derecha .titulo {
+  color: #ffffff;
+  font-size: 26px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.main .cursos .contenedor .articulos .articulo .derecha .texto-articulo{
+  padding: 0 20px;
+  text-align: justify;
+}
+
+.main .cursos .contenedor .articulos .articulo .derecha .texto-articulo p{
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.footer .topMenu ul{
+  list-style: none;
+}
+
+.footer{
+  padding: 6px 0;
+  font-size: 12px;
+  border-bottom: 1px solid #000000;
+  background: #000000;
+  overflow:hidden;
+  border-color: #000000
+
+}
+
+.footer .topMenu ul li{
+  float: left;
+}
+
+.footer .topMenu ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px 15px;
+  display: inline-block;
+}
+
+.footer .topMenu ul li a:hover{
+  color: #ffffff;
+}
+
+.footer .topRedes ul{
+  list-style: none;
+}
+.footer .topRedes ul li{
+  float: right;
+}
+
+.footer .topRedes ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px 15px;
+  display: inline-block;
+}
+
+.footer .topRedes ul li a:hover{
+  color: #ffffff;
+}
+
+.footer p{
+  padding: 10px 15px;
+  color: #ffffff
+}

@@ -1,0 +1,156 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+
+}
+ 
+body{
+  background-image: url('../../../img/IniciarSesion/Estudiante/back2.jpg');
+  background-size:100% 100%;
+  -webkit-background-size: cover;
+  -moz background-size: cover;
+  -o-background-size:cover;
+}
+.contenedor{
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/*Header*/
+
+.header .topHeader{
+  padding: 6px 0;
+  font-size: 12px;
+  border-bottom: 1px solid #000000;
+  background: #152e73;
+  overflow:hidden;
+
+}
+
+
+.header .topHeader .contenedor .topMenu ul{
+  list-style: none;
+}
+
+.header .topHeader .contenedor .topMenu ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px 15px;
+  display: inline-block;
+}
+ 
+.container{
+  width: 100%;
+  height: 100vh;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ 
+.login-container{
+  display: flex;
+  width: 400px;
+  height: auto;
+  background: #fff;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .2);
+}
+
+
+ 
+.register{
+  padding: 40px;
+  position: relative;
+}
+ 
+.register h2{
+  color: #797979;
+  margin-bottom: 30px;
+}
+ 
+
+ 
+.register .submit{
+  width: 100%;
+  border: none;
+  padding: 12px;
+  background: #102252;
+  margin: 12px 0;
+  color: #fff;
+  font-size: 12px;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, .2);
+  cursor: pointer;
+
+}
+
+.register p{
+  height: 30px;
+  text-align: center;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.register a{
+  color: #000000;
+  text-decoration: none;
+
+}
+.register a:hover{
+  color: #000000;
+  text-decoration: underline;
+
+}
+
+.footer .topMenu ul{
+  list-style: none;
+}
+
+.footer{
+  padding: 6px 0;
+  font-size: 12px;
+  border-bottom: 1px solid #000000;
+  background: #152e73;
+  overflow:hidden;
+  border-color: #000000
+
+}
+
+.footer .topMenu ul li{
+  float: left;
+}
+
+.footer .topMenu ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px 15px;
+  display: inline-block;
+}
+
+.footer .topMenu ul li a:hover{
+  color: #ffffff;
+}
+
+.footer .topRedes ul{
+  list-style: none;
+}
+.footer .topRedes ul li{
+  float: right;
+}
+
+.footer .topRedes ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px 15px;
+  display: inline-block;
+}
+
+.footer .topRedes ul li a:hover{
+  color: #ffffff;
+}
+
+.footer p{
+  padding: 10px 15px;
+  color: #ffffff
+}

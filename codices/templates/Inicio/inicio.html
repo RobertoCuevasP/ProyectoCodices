@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+{% block content %}
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Codices</title>
+		<link rel="stylesheet" type="text/css" href="../../static/css/Inicio/estilos.css">
+		
+	</head>
+	<body>
+		<div class="anadirc">
+			<button class="anadir"><a href="/codices/añadir_curso">Añadir Curso</a></button>
+
+		</div>
+		<div class="dropdown">
+			{% if user.is_authenticated %}
+        		<div class="verificado">
+        			<h4>Bienvenido {{ user.username }}</h4>
+        			<a href="{% url 'sign_out' %}">Cerrar sesión</a>
+        		</div>
+    		{% else %}
+    			<!--
+    		    <a href="{% url 'sign_up' %}">Registrate</a>
+				-->
+				<button class="dropbtn">Iniciar Sesión</button>
+				<div class="dropdown-content">
+					<a href="{% url 'sign_in' %}">Estudiante</a>
+					<a href="/codices/inicio_sesion_docente">Docente</a>
+				</div>
+			{% endif %}
+		</div>
+		<div class="header">
+			<div class="topHeader">
+				<div class="contenedor">
+					<div class = "topMenu">
+						<ul>
+							<li><a href="/">Inicio</a></li>
+						</ul>
+					</div>
+
+
+				</div>
+			</div>
+
+			<div class="titulo">
+				<div class = contenedor>
+				</div>
+			</div>
+
+		</div>
+		<div class="main">
+			<div class="portada">
+				<div class="contenedor">
+					<div class="portadaPrincipal">
+						<img src="../../static/img/Inicio/illimani.jpeg" width="100%" height="100%">
+					</div>
+				</div>
+			</div>
+
+			<div class="cursos">
+				<div class="contenedor">
+					<div class="articulos">
+						<div class="articulo1">
+							<h3 class="titulo">Arte</h3>
+							<a title="Arte" href="/codices/arte"><img src="../../static/img/Inicio/arte.jpeg" alt="" height="300" style="border-radius: 50px;"/></a>
+						</div>
+						<div class="articulo2">
+							<h3 class="titulo">Deportes</h3>
+							<a title="Deportes" href="/codices/deportes"><img src="../../static/img/Inicio/deportes.jpg" alt="" height="300" style="border-radius: 50px;"></a>
+
+						</div>
+					</div>
+				</div>
+        		<div class="contenedor">
+					<div class="articulos">
+            			<div class="articulo3">
+  							<h3 class="titulo">Educacion</h3>
+  							<a title="Educacion" href="/codices/educacion"><img src="../../static/img/Inicio/educacion.jpeg" alt="" height="300" style="border-radius: 50px;"></a>
+  						</div>
+    					<div class="articulo4">
+    						<h3 class="titulo">Tecnologia</h3>
+    						<a title="Tecnologia" href="/codices/tecnologia"><img src="../../static/img/Inicio/tecnologia.jpeg" alt="" height="300" style="border-radius: 50px;"></a>
+						</div>
+					</div>
+				</div>
+				<div class="aside"></div>
+			</div>
+		</div>
+		<div class="footer">
+			<p>Más información</p>
+			<div class = "topMenu">
+				<ul>
+					<li><a href="#">Acerca de nosotros</a></li>
+					<li><a href="#">Contáctenos</a></li>
+				</ul>
+			</div>
+			<div class="topRedes">
+				<ul>
+					<li><a href="#">Instagram</a></li>
+					<li><a href="#">Twitter</a></li>
+					<li><a href="#">Facebook</a></li>
+
+				</ul>
+			</div>
+		</div>
+
+	</body>
+
+</html>
+{% endblock content %}

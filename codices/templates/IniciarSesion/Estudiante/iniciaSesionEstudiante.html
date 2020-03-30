@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+ 
+  <link rel="stylesheet" href="../../static/css/IniciarSesion/Estudiante/styles.css">
+ 
+  <title>Iniciar Sesión Estudiante</title>
+</head>
+<body>
+    <div class="header">
+      <div class="topHeader">
+        <div class="contenedor">
+          <div class = "topMenu">
+            <ul>
+              <li><a href="/">Inicio</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   <div class="container">
+      <div class="login-container">
+        <div class="register">
+          <h2>Iniciar Sesión</h2>
+            {% block content %}
+              <form method="POST">
+                {% csrf_token %}
+                {{ form.as_p }}
+            {% endblock content %}
+           <input type="submit" class="submit" value="Ingresar">
+           <p><a href="{% url 'sign_up' %}">¿Aún no esta registrado?</a></p>
+
+         </form>
+       </div>
+     </div>
+   </div>
+   <div class="footer">
+      <p>Más información</p>
+      <div class = "topMenu">
+        <ul>
+          <li><a href="#">Acerca de nosotros</a></li>
+          <li><a href="#">Contactenos</a></li>
+        </ul>
+      </div>
+      <div class="topRedes">
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Facebook</a></li>
+
+        </ul>
+      </div>
+    </div>
+</body>
+</html>
+{% endblock %}

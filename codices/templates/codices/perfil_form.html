@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+ 
+  <link rel="stylesheet" href="../../static/css/Registros/RegistroEstudiante/style.css">
+ 
+  <title>Registro Estudiante</title>
+</head>
+<body>
+    <div class="header">
+      <div class="topHeader">
+        <div class="contenedor">
+          <div class = "topMenu">
+            <ul>
+              <li><a href="/">Inicio</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   <div class="container">
+      <div class="login-container">
+        <div class="register">
+          <h2>Regístrate</h2>
+            <form method="POST">
+              {% csrf_token %}
+              {{ form.as_p }}
+              <input type="submit" class="submit" value="Registrarse">
+
+            </form>
+          </div>
+        </div>
+      </div>
+    <div class="footer">
+      <p>Más información</p>
+      <div class = "topMenu">
+        <ul>
+          <li><a href="#">Acerca de nosotros</a></li>
+          <li><a href="#">Contactenos</a></li>
+        </ul>
+      </div>
+      <div class="topRedes">
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Facebook</a></li>
+
+        </ul>
+      </div>
+    </div>
+</body>
+</html>
+{% endblock %}

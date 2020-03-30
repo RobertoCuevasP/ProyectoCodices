@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Codices</title>
+		<link rel="stylesheet" type="text/css" href="../../static/css/Tecnologia/estilos.css">
+	</head>
+	<body>
+		<div class="header">
+			<div class="topHeader">
+				<div class="contenedor">
+					<div class = "topMenu">
+						<ul>
+							<li><a href="/">Inicio</a></li>
+						</ul>
+					</div>
+
+
+				</div>
+			</div>
+
+			<div class="titulo">
+				<div class = contenedor>
+					<h1><a href="">Tecnología</a></h1>
+				</div>
+			</div>
+
+		</div>
+		<div class="main">
+			<div class="portada">
+				<div class="contenedor">
+					<div class="portadaPrincipal">
+						<img src="../../static/img/Tecnologia/portada.jpeg" width="1150" >
+					</div>
+				</div>
+			</div>
+
+			<div class="cursos">
+				<div class="contenedor">
+					<div class="articulos">
+						<ul>
+    						{% for curso in curso_tecnologia %}
+    						<div class = "articulo">
+    							<li>
+    								<div class="izquierda">
+    									<img src="{{ curso.imagen.url }}" class='imgRedonda'>
+    								</div>
+    								<div class="derecha">
+    									<h3 class="titulo">{{curso.nombre}}</h3>
+    									<div class="texto-articulo">
+    										<p>Información: {{curso.descripcion}}</p>
+    								
+    									</div>
+									</div>
+    							</li>
+    						</div>
+   							{% endfor %}
+    					</ul>
+						<!--<div class="articulo1">
+							<h3 class="titulo">Escuela de Tecnología e Innovación</h3>
+							<img src="../../static/img/Tecnologia/curso1.jpeg" alt="" height="300" class='imgRedonda'>
+							<div class="texto-articulo1">
+								<p>Dirección: San Pedro, #888</p>
+								<p>Contactos: 78787878-2313131</p>
+								<p>Costo: 350 Bs:</p>
+							</div>
+						</div>
+						<div class="articulo2">
+							<h3 class="titulo">Escuela de Programación</h3>
+							<img src="../../static/img/Tecnologia/curso2.jpeg" alt="" height="300" class='imgRedonda'>
+							<div class="texto-articulo2">
+								<p>Dirección: Sopocachi, #999</p>
+								<p>Contactos: 7999991-2444444</p>
+								<p>Costo: 350 Bs</p>
+							</div>
+						</div>
+						-->
+					</div>
+				</div>
+				<div class="aside">
+
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<p>Más información</p>
+			<div class = "topMenu">
+				<ul>
+					<li><a href="#">Acerca de nosotros</a></li>
+					<li><a href="#">Contáctenos</a></li>
+				</ul>
+			</div>
+			<div class="topRedes">
+				<ul>
+					<li><a href="#">Instagram</a></li>
+					<li><a href="#">Twitter</a></li>
+					<li><a href="#">Facebook</a></li>
+
+				</ul>
+			</div>
+		</div>
+
+	</body>
+</html>

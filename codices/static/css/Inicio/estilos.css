@@ -1,0 +1,316 @@
+/*Estilos generales*/
+{% load static %}
+
+*{
+  background: url();
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -mox-box-sizing: border-box;
+  box-sizing: border-box; /*logra que el padding funcione bien*/
+  background-color: #2F042B
+}
+
+body{
+  
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+/*compatible con caulquier de navegadores*/
+  -webkit-background-size: cover;
+  -moz background-size: cover;
+  -o-background-size:cover;
+}
+
+{
+  font-family: sans-serif;
+}
+
+.contenedor{
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.anadir {
+  background-color: #FF8000;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.anadirc {
+  position: relative;
+  float: right;
+  display: inline-block;
+  margin-right: 75px;
+  background-color: #FF8000;
+}
+
+.anadirc a{
+  text-decoration: none;
+  color: #ffffff;
+  
+}
+
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  float: right;
+  display: inline-block;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.dropdown .verificado a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: sans-serif;
+}
+
+.dropdown .verificado h4{
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: sans-serif;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font: condensed 100% sans-serif;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+/*Header*/
+
+.header .topHeader{
+  padding: 6px 0;
+  font-size: 12px;
+  border-bottom: 1px solid #000000;
+  background: #2F042B;
+  overflow:hidden;
+
+}
+
+/*------------
+.header .topHeader .contenedor .topMenu{
+  float: left;
+}
+}--------------*/
+
+.header .topHeader .contenedor .topMenu ul{
+  list-style: none;
+}
+
+.header .topHeader .contenedor .topMenu ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px 15px;
+  display: inline-block;
+}
+/*------------
+.header .titulo{
+  margin: 35px 0;
+  text-align: center;
+
+}
+}--------------*/
+
+.header .titulo .contenedor h1 a{
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 60px;
+  display: inline-block;
+  padding: 30px 0;
+  font-weight: 300;
+
+}
+/*
+.header .titulo .contenedor h1 a{
+  color: #8b919c
+}
+*/
+
+/*main*/
+/*portada*/
+.main .portada{
+  padding-bottom: 20px;
+  border-bottom: 1px solid  #2F042B; /*linea de protada*/
+}
+
+.main .portada .contenedor .portadaPrincipal{
+  width: 100%;
+}
+
+
+.main .portada .contenedor .portadaPrincipal img{
+  width: %;
+}
+/*Cursos*/
+.main .cursos{
+  background: #2F042B;
+  padding: 40px 0;
+}
+.main .cursos .contenedor{
+  overflow: hidden;
+  width: 100%;
+}
+
+.main .cursos .contenedor .articulos{
+  background: #2F042B;
+  padding: 60px 10px;
+  border: 1px solid #000000;
+  margin-bottom: 30px;
+}
+.main .cursos .contenedor .articulos .articulo1{
+  float: left;
+  width: 50%;
+  margin-bottom: 20px
+}
+
+.main .cursos .contenedor .articulos .articulo1 .titulo {
+  color: #ffffff;
+  font-size: 26px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.main .cursos .contenedor .articulos .articulo1 img{
+  width: 60%;
+  margin-bottom: 20px;
+  padding: 0 10px
+}
+
+
+
+.main .cursos .contenedor .articulos .articulo2{
+  float: right;
+  width: 50%;
+}
+
+.main .cursos .contenedor .articulos .articulo2 .titulo {
+  color: #ffffff;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.main .cursos .contenedor .articulos .articulo2 img{
+  width: 60%;
+  margin-bottom: 20px;
+  object-position: center;
+}
+
+.main .cursos .contenedor .articulos .articulo3{
+  float: left;
+  width: 50%;
+}
+
+.main .cursos .contenedor .articulos .articulo3 .titulo {
+  color: #ffffff;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.main .cursos .contenedor .articulos .articulo3 img{
+  width: 60%;
+  margin-bottom: 20px;
+  object-position: center;
+}
+
+.main .cursos .contenedor .articulos .articulo4{
+  float: right;
+  width: 50%;
+}
+
+.main .cursos .contenedor .articulos .articulo4 .titulo {
+  color: #ffffff;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.main .cursos .contenedor .articulos .articulo4 img{
+  width: 60%;
+  margin-bottom: 20px;
+  object-position: center;
+}
+
+.footer .topMenu ul{
+  list-style: none;
+}
+
+.footer{
+  padding: 6px 0;
+  font-size: 12px;
+  border-bottom: 1px solid #000000;
+  background: #2F042B;
+  overflow:hidden;
+  border-color: #000000
+
+}
+
+.footer .topMenu ul li{
+  float: left;
+}
+
+.footer .topMenu ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px 15px;
+  display: inline-block;
+}
+
+.footer .topMenu ul li a:hover{
+  color: #ffffff;
+}
+
+.footer .topRedes ul{
+  list-style: none;
+}
+.footer .topRedes ul li{
+  float: right;
+}
+
+.footer .topRedes ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px 15px;
+  display: inline-block;
+}
+
+.footer .topRedes ul li a:hover{
+  color: #ffffff;
+}
+
+.footer p{
+  padding: 10px 15px;
+  color: #ffffff
+}
