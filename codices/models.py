@@ -41,10 +41,9 @@ class Curso(models.Model):
 	costo = models.CharField(max_length=10)
 	tipo = models.CharField(max_length=10, choices=MODALIDAD_CHOICES, blank = False)
 	descripcion = models.CharField(max_length=1000)
-	#ubicacion
 	fechaInicio = models.DateField()
 	fechaFin = models.DateField()
-	imagen = models.ImageField(upload_to = 'cursos/')
+	imagen = models.ImageField(upload_to = 'cursos/', default='cursos/logo.jpeg')
 
 	def __str__(self):
 		return self.nombre

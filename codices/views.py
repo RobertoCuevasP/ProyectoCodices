@@ -7,9 +7,7 @@ from .forms import SignUpForm, DocenteForm, CursoForm
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
 from django.contrib.auth.views import LoginView, LogoutView
-#from django.views.generic import CreateView
-#from django.core.urlresolvers import reverse_lazy
-#from django.urls import reverse
+
 
 
 # Create your views here.
@@ -29,7 +27,7 @@ def arte(request):
 def educacion(request):
 	educacion_list = Curso.objects.all().filter(categoria = "Educación")
 	context = {'curso_educacion': educacion_list}
-	return render_to_response("Educacion/educacion.html")
+	return render_to_response("Educacion/educacion.html", context)
 
 def tecnologia(request):
 	tecnologia_list = Curso.objects.all().filter(categoria = "Tecnología")
@@ -46,34 +44,16 @@ def registro_docente(request):
 		form = DocenteForm()
 	return render(request, 'Registros/RegistroDocente/registro_docente.html', {'form':form})
 
-
-#def registro_estudiante(request):
-#	if request.method =='POST':
-#		form = UserCreationForm(request.POST)
-#		if form.is_valid():
-#			form.save()
-#			return redirect('/codices/inicio')
-#	else:
-#		form = UserCreationForm()
-#		args = {'form': form}
-#	return render(request, 'Registros/RegistroEstudiante/registro_estudiante.html', args)
-
-#class RegistroEstudiante(CreateView):
-#	model = User
-#	template_name = "Registros/RegistroEstudiante/registro_estudiante.html"
-#	form_class = UserCreationForm
-#	success_url = reverse('inicio')
-
-
 def inicio_sesion_estudiante(request):
 	return render_to_response("IniciarSesion/Estudiante/iniciaSesionEstudiante.html")
 
 def inicio_sesion_docente(request):
 	return render_to_response("IniciarSesion/Docente/iniciaSesionDocente.html")
 
+
 def añadir_curso(request):
 	if request.method == 'POST':
-		form = CursoForm(request.POST)
+		form = CursoForm(request.POST, request.FILES)
 		if form.is_valid():
 			form.save()
 		return redirect('/')
@@ -81,8 +61,7 @@ def añadir_curso(request):
 		form = CursoForm()
 
 	return render(request, 'AñadirCurso/añadir_curso.html', {'form': form})
-	#return render_to_response("AñadirCurso/añadir_curso.html")
-
+	
 class SignUpView(CreateView):
     model = Perfil
     form_class = SignUpForm
